@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عملية شراء</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form 
+    method="POST" 
+    action="https://script.google.com/macros/s/AKfycbwTk7WVRrog4RMvlYQLGdRV8eLZxqK1Tr0VMmBfSH8DsAoQplEVr6eObBElQRE9I4D4/exec"
+  >
+  <h2>عملية الشراء</h2>
+    <input name="FullName" type="text" placeholder="اسم الكامل" required>
+    <input name="Address" type="text" placeholder="عنوان" required>
+    <input name="PhoneNumber" type="tel" placeholder="رقم الهاتف" required>
+    <input name="ExtraPhoneNumber" type="tel" placeholder="رقم الهاتف اضافي">
+    <input name="Willaya" type="tel" placeholder="ولاية" required>
+    <input name="Baladia" type="tel" placeholder="بلدية" required>
+    <textarea name="ExtraNote" placeholder="ملاحظات من الزبون"></textarea>
+    <button type="submit">ارسال الطلب</button>
+  </form> 
+</body>
+</html>
